@@ -11,14 +11,14 @@
 DROP TABLE dbo.Cars
 
 CREATE TABLE Brands(
-	BrandId int not null IDENTITY(1,1) primary key ,
+	BrandId int not null IDENTITY(1,1) primary key,
 	BrandName varchar(255)
 )
 
 DROP TABLE dbo.Brands
 
 CREATE TABLE Colors(
-	ColorId int not null IDENTITY(1,1) primary key ,
+	ColorId int not null IDENTITY(1,1) primary key,
 	ColorName varchar(255)
 )
 
