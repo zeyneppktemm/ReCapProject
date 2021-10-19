@@ -101,11 +101,11 @@ namespace ConsoleUI
         private static void CarTest()
         {
             CarManager carManager = new CarManager(new EfCarDal());
-            var cars = carManager.GetAll();
+            var cars = carManager.GetCarDetails();
 
             foreach (var car in cars)
             {
-                Console.WriteLine(car.CarName);
+                Console.WriteLine(car.CarName + " - " +  car.BrandName + " - " + car.ColorName + " - " + car.DailyPrice);
             }
         }
     }
